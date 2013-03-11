@@ -10,16 +10,57 @@ def input(move1,move2):
 	#print type(move1)
 	tic[int(move1),int(move2)]=1
 	print tic
+	#tac[int(move1),int(move2)]=2
 
 #conditions
-pl1=raw_input("input your move position\n")
-pl1=int(pl1)
+def input_pl1(pl1):
+	if pl1==1:
+		move1=0
+		move2=0
+		input(move1,move2)
+	elif pl1==2:
+		move1=0
+		move2=1
+		input(move1,move2)
+	elif pl1==3:
+		move1=0
+		move2=2
+		input(move1,move2)
+	elif pl1==4:
+		move1=1
+		move2=0
+		input(move1,move2)
+	elif pl1==5:
+		move1=1
+		move2=1
+		input(move1,move2)
+	elif pl1==6:
+		move1=1
+		move2=2
+		input(move1,move2)
+	elif pl1==7:
+		move1=2
+		move2=0
+		input(move1,move2)
+	elif pl1==8:
+		move1=2
+		move2=1
+		input(move1,move2)
+	elif pl1==9:
+		move1=2
+		move2=2
+		input(move1,move2)
+	else:
+			print "invalid move"
 
-if pl1==1:
-	move1=0
-	move2=0
-	input(move1,move2)
-else:
-	move1=0
-	move2=1
-	input(move1,move2)
+moves=1
+while moves<8:
+	pl1=raw_input("input your move position\n")
+	player1=int(pl1)
+	input_pl1(player1)
+	print moves
+	pl2=raw_input('Input second player move\n')
+	player2=int(pl2) 
+	input_pl1(player2)
+	print moves
+	moves+=1
