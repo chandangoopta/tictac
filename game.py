@@ -54,7 +54,7 @@ def input_pl1(pl1):
 			print "invalid move"
 
 moves=1
-while moves<8:
+while moves<4:
 	pl1=raw_input("input your move position\n")
 	player1=int(pl1)
 	input_pl1(player1)
