@@ -1,6 +1,6 @@
 from numpy import matrix
 from numpy import linalg
-
+#some stupid change
 tic = matrix( [[0,0,0],[0,0,0],[0,0,0]])
 print tic
 
